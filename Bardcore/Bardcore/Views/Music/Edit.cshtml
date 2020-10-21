@@ -1,0 +1,69 @@
+﻿@model Bardcore.Models.SongInfo
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>SongInfo</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="TrackId" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ArtistName" class="control-label"></label>
+                <input asp-for="ArtistName" class="form-control" />
+                <span asp-validation-for="ArtistName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GenreName" class="control-label"></label>
+                <input asp-for="GenreName" class="form-control" />
+                <span asp-validation-for="GenreName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AlbumName" class="control-label"></label>
+                <input asp-for="AlbumName" class="form-control" />
+                <span asp-validation-for="AlbumName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ReleaseYear" class="control-label"></label>
+                <input asp-for="ReleaseYear" class="form-control" />
+                <span asp-validation-for="ReleaseYear" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Uploader" class="control-label"></label>
+                <input asp-for="Uploader" class="form-control" />
+                <span asp-validation-for="Uploader" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UploadDate" class="control-label"></label>
+                <input asp-for="UploadDate" class="form-control" />
+                <span asp-validation-for="UploadDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FileLocation" class="control-label"></label>
+                <input asp-for="FileLocation" class="form-control" />
+                <span asp-validation-for="FileLocation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

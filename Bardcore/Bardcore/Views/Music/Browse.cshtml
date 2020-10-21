@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Bardcore.Models.SongInfo>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Upload</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Title
+            </th>
+            <th>
+                Artist
+            </th>
+            <th>
+                Genre
+            </th>
+            <th>
+                Original Album
+            </th>
+            <th>
+                Year Released
+            </th>
+            <th>
+                Uploader
+            </th>
+            <th>
+                Upload Date
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ArtistName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GenreName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AlbumName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReleaseYear)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Uploader)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UploadDate)
+            </td>
+            <td>
+                <a asp-action="Listen" asp-route-id="@item.TrackId">Listen</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
