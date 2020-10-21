@@ -1,0 +1,20 @@
+﻿@model Bardcore.ViewModels.PlaylistIndividualTracksVM;
+@{
+    ViewData["Title"] = "PlaylistIndividualTracks";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Model.userPlaylist.PlaylistName</h2>
+
+<ol>
+    @foreach (var track in Model.userPlaylistTracks)
+    {
+        <li>
+            @Html.DisplayFor(t => track.TrackId) @Model.songInfo.Name
+            <audio controls>
+                <source src="~/uploads/@Model.songInfo.FileLocation" type="audio/mpeg" />
+                <source src="~/uploads/@Model.songInfo.FileLocation" type="audio/ogg" />
+            </audio>
+        </li>
+    }
+</ol>

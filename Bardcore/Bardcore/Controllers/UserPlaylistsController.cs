@@ -11,6 +11,7 @@ using Bardcore.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Hosting;
 using System.IO;
+using Bardcore.ViewModels;
 
 namespace Bardcore.Controllers
 {
@@ -48,6 +49,23 @@ namespace Bardcore.Controllers
 
             return View(userPlaylist);
         }
+
+        //ViewModel to Display and Play Individual Tracks
+        /*public IActionResult PlaylistIndividualTracks(int id)
+        {
+            PlaylistIndividualTracksVM playlistIndividualTracks = new PlaylistIndividualTracksVM();
+            playlistIndividualTracks.userPlaylist = _context.UserPlaylist.FirstOrDefault(p => p.PlaylistCreator == id);
+
+            var PlaylistQuery = _context.UserPlaylistTrack.Where(pl => pl.PlaylistId == id);
+
+            var SongInfo = from c in PlaylistQuery
+                           select c.TrackId;
+
+            playlistIndividualTracks.songInfo = _context.SongInfo.Where(c => SongInfo.Contains(c.TrackId));
+
+            return View(playlistIndividualTracks);
+        }*/
+
 
         // GET: UserPlaylists/Create
         public IActionResult Create()
