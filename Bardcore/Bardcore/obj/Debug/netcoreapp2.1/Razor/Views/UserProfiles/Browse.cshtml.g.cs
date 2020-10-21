@@ -81,7 +81,7 @@ using Bardcore.Models;
             WriteLiteral("        <tr>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(410, 100, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "10a862d0dfcc4d30b66088b07afebfc6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d61f208743b34671ad9429285d30a19a", async() => {
                 BeginContext(460, 46, false);
 #line 22 "C:\Users\Jordan\source\Bardcore\Bardcore\Bardcore\Views\UserProfiles\Browse.cshtml"
                                                             Write(Html.DisplayFor(modelItem => item.DisplayName));

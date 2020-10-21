@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 
 namespace Bardcore.Models
 {
@@ -16,6 +18,7 @@ namespace Bardcore.Models
         public int? PlaylistCreator { get; set; }
         public string PlaylistName { get; set; }
 
+        [ForeignKey("PlaylistCreator")]
         public UserProfile PlaylistCreatorNavigation { get; set; }
         public ICollection<UserPlaylistTrack> UserPlaylistTrack { get; set; }
     }

@@ -9,9 +9,14 @@ namespace Bardcore.ViewModels
     public class MusicInformationVM
     {
 
-        List<SongInfo> allSongInfo { get; set; }
-        List<Album> allAlbums { get; set; }
-        List<Artist> allArtists { get; set; }
-        List<Genre> allGenres { get; set; }
+        public SongInfo Name;
+        public Artist ArName;
+        public Genre GName;
+        public Album AlName;
+
+        public MusicInformationVM()
+        {
+
+        }
     }
 }

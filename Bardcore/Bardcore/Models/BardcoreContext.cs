@@ -74,5 +74,7 @@ namespace Bardcore.Models
         public DbSet<Bardcore.Models.SongInfo> SongInfo { get; set; }
 
         public DbSet<Bardcore.Models.UserPlaylist> UserPlaylist { get; set; }
+
+        public DbSet<Bardcore.Models.UserPlaylistTrack> UserPlaylistTrack { get; set; }
     }
 }

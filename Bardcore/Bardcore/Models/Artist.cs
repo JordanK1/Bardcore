@@ -14,7 +14,7 @@ namespace Bardcore.Models
 
         [Key]
         public int ArtistId { get; set; }
-        public string Name { get; set; }
+        public string ArName { get; set; }
 
         public ICollection<Album> Album { get; set; }
         public ICollection<SongInfo> SongInfo { get; set; }

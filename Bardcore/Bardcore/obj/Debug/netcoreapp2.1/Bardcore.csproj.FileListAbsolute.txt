@@ -110,4 +110,8 @@ C:\Users\Jordan\source\Bardcore\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\
 C:\Users\Jordan\source\Bardcore\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\UserPlaylists\Details.cshtml.g.cs
 C:\Users\Jordan\source\Bardcore\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\UserPlaylists\Edit.cshtml.g.cs
 C:\Users\Jordan\source\Bardcore\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\UserPlaylists\Index.cshtml.g.cs
-C:\Users\Jordan\source\Bardcore\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\UserProfiles\ProfilePlaylist.cshtml.g.cs
+C:\Users\Jordan\source\Bardcore\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\UserPlaylistTracks\Create.cshtml.g.cs
+C:\Users\Jordan\source\Bardcore\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\UserPlaylistTracks\Delete.cshtml.g.cs
+C:\Users\Jordan\source\Bardcore\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\UserPlaylistTracks\Details.cshtml.g.cs
+C:\Users\Jordan\source\Bardcore\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\UserPlaylistTracks\Edit.cshtml.g.cs
+C:\Users\Jordan\source\Bardcore\Bardcore\Bardcore\obj\Debug\netcoreapp2.1\Razor\Views\UserPlaylistTracks\Index.cshtml.g.cs

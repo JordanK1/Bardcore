@@ -13,7 +13,7 @@ namespace Bardcore.Models
 
         [Key]
         public int AlbumId { get; set; }
-        public string Name { get; set; }
+        public string AlName { get; set; }
         public int? ArtistName { get; set; }
 
         public Artist ArtistNameNavigation { get; set; }

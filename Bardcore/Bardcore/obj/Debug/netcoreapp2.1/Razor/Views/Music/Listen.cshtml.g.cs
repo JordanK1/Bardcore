@@ -227,7 +227,7 @@ using Bardcore.Models;
             WriteLiteral("\r\n        </dd>\r\n        <dd>\r\n            <audio controls> \r\n            ");
             EndContext();
             BeginContext(1625, 88, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("source", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "f355e97f09e249419b7d985eb6303aba", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("source", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "a365572a978445eb8791f58bcb78d41d", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -253,7 +253,7 @@ AddHtmlAttributeValue("", 1648, Html.DisplayFor(model => model.FileLocation), 16
             WriteLiteral("\r\n            ");
             EndContext();
             BeginContext(1727, 87, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("source", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e9fd8732a67f45848802620416022d7c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("source", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "bc0678d462294fa0b3ebdc077f686f1e", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -279,7 +279,7 @@ AddHtmlAttributeValue("", 1750, Html.DisplayFor(model => model.FileLocation), 17
             WriteLiteral("\r\n                Error Rendering Audio Player\r\n            </audio>\r\n        </dd>\r\n    </dl>\r\n</div>\r\n<div>\r\n    ");
             EndContext();
             BeginContext(1929, 59, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "84aedab48fb34495b1989674377ba992", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8602fa4bf71e419e9fb33cf417937fde", async() => {
                 BeginContext(1980, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -314,7 +314,7 @@ AddHtmlAttributeValue("", 1750, Html.DisplayFor(model => model.FileLocation), 17
             WriteLiteral(" |\r\n    ");
             EndContext();
             BeginContext(1996, 39, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "02a8cdc21dec493b9fce635558334627", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ec72d7b2865645e7af61b4fe3233ea1d", async() => {
                 BeginContext(2019, 12, true);
                 WriteLiteral("Back to List");
                 EndContext();

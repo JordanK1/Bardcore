@@ -13,7 +13,7 @@ namespace Bardcore.Models
 
         [Key]
         public int GenreId { get; set; }
-        public string Name { get; set; }
+        public string GName { get; set; }
 
         public ICollection<SongInfo> SongInfo { get; set; }
     }
