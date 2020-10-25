@@ -41,7 +41,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Uploader" class="control-label"></label>
-                <input asp-for="Uploader" class="form-control" value="@userManager.GetUserId(User)"/>
+                <input asp-for="Uploader" class="form-control"/>
                 <span asp-validation-for="Uploader" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -49,11 +49,7 @@
                 <input asp-for="UploadDate" class="form-control" />
                 <span asp-validation-for="UploadDate" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="FileLocation" class="control-label"></label>
-                <input asp-for="FileLocation" class="form-control" />
-                <span asp-validation-for="FileLocation" class="text-danger"></span>
-            </div>
+          
 
             <div>
                 <label for="audio">File Upload</label>

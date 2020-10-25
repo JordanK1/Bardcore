@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -8,6 +9,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authorization;
 using Bardcore.Models;
+using Bardcore.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Hosting;
 using System.IO;
@@ -32,10 +34,49 @@ namespace Bardcore.Controllers
             return View(await _context.SongInfo.ToListAsync());
         }
 
+        
+        /*public static List<MusicInformationVM> PleaseWork(BardcoreContext context) //Attempt 1 at linq join statement
+           {
+                
+                var browse = (from s in context.SongInfo
+                            join art in context.Artist on s.ArtistName equals art.ArtistId
+                            join g in context.Genre on s.GenreName equals g.GenreId
+                            join alb in context.Album on s.AlbumName equals alb.AlbumId
+                            orderby s.TrackId
+                            select new
+                            {
+                                s.Name,
+                                art.ArName,
+                                g.GName,
+                                alb.AlName,
+                                s.Uploader,
+                                s.UploadDate
+                            }).ToList();
+            }    */
+
+        public List<MusicInformationVM> GetList() //Attempt 2 at linq join statement
+        {
+            var songs = db.SongInfo
+                        .select(s => new MusicInformationVM()
+                        {
+                            Name = s.Name,
+                            Artist = art.ArName,
+                            Genre = g.GName,
+                            Album = alb.AlName,
+                            Uploader = s.Uploader,
+                            UploadDate = s.UploadDate
+                        });
+            return songs.ToList<MusicInformationVM>();
+        }
+
         [Authorize]
         public async Task<IActionResult> Browse()
         {
-            return View(await _context.SongInfo.ToListAsync());
+
+            return View(GetList());
+            
+            /*return View(await _context.SongInfo.ToListAsync());*/ //Original View return statement
+            
         }
 
         // GET: Music/Details/5
@@ -68,6 +109,7 @@ namespace Bardcore.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
+        [Authorize]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("TrackId,Name,ArtistName,GenreName,AlbumName,ReleaseYear,Uploader,UploadDate,FileLocation")] SongInfo songInfo,
                 IFormFile FileMusic)
