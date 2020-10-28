@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q9VLbzCs3QDoHcC9WNZfZjd0YyLgBpV3zZk4CuPvOVuayBeKE+L7rom26k9weEgofQdbIRJjFcWVgiBA5qbH7A==",
+  "dgSpecHash": "z49G8BBDQxdYT0jhaudhE9fzXlraLniCDZd/2svMsJPb+nlLbdXbRGYkyqIEiLgiQAbhRytG4CYOOrjplo1s2w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Jordan\\source\\Bardcore\\Bardcore\\Bardcore\\Bardcore.csproj",
+  "projectFilePath": "C:\\Users\\Jordan\\Downloads\\Bardcore-masterv2\\Bardcore-master\\Bardcore\\Bardcore\\Bardcore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jordan\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\Jordan\\.nuget\\packages\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",
